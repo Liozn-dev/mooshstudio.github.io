@@ -1,4 +1,0 @@
-cd "c:\Users\Julio Moura\Documents\Portifolio-moosh"
-git init
-git add .
-git commit -m "Prepare site for GitHub Pages (add CNAME)"
