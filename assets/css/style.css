@@ -464,8 +464,8 @@ moosh-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Garante centralização vertical */
-    gap: 0; /* Remove espaçamento lateral */
+    height: 100vh; 
+    gap: 0; 
     position: relative;
 }
 
@@ -817,51 +817,47 @@ avatar-img{
     color: #071028;
 }
 
-/* ===================================
-   ESTILOS DA SEÇÃO RESUME - TIMELINE
-   =================================== */
 
-/* Ajusta o .section-content PAI para não ser flex horizontal */
 #resume .section-content {
     display: block;
     position: relative;
-    max-width: 800px; /* Define uma largura máxima para a timeline */
-    margin: 0 auto; /* Centraliza o bloco da timeline */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .resume-tab-content {
-    display: none; /* Esconde todas as abas por padrão */
+    display: none; 
     position: relative;
-    padding-left: 60px; /* Cria espaço à esquerda para a linha e os ícones */
+    padding-left: 60px; 
 }
 
 .resume-tab-content.active {
-    display: block; /* Mostra apenas a aba que tem a classe 'active' */
+    display: block; 
 }
 
-/* A linha vertical da timeline */
+
 .resume-line {
     position: absolute;
     top: 10px;
     bottom: 10px;
-    left: 20px; /* Posição da linha */
+    left: 20px; 
     width: 2px;
-    background: var(--card-bg); /* Fundo sutil para a linha */
+    background: var(--card-bg); 
 }
 
 .resume-items .item {
     position: relative;
-    margin-bottom: 30px; /* Espaço entre os itens da timeline */
+    margin-bottom: 30px; 
 }
 
-/* O ícone em cima da linha */
+
 .resume-items .item .info i {
     position: absolute;
-    left: -42px; /* Centraliza o ícone na linha (20px da linha + 22px metade do ícone) */
+    left: -42px; 
     top: 5px;
     font-size: 1.5rem;
     color: var(--primary-color);
-    background: var(--body-color); /* Fura a linha com a cor de fundo */
+    background: var(--body-color); 
     padding: 2px;
 }
 
@@ -891,7 +887,7 @@ avatar-img{
 
 .skills-grid {
     display: grid;
-    /* Cria colunas responsivas */
+  
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
@@ -899,7 +895,7 @@ avatar-img{
 .skill-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaço entre o ícone e o texto */
+    gap: 15px; 
     
     padding: 25px 20px;
     background: var(--card-bg);
@@ -940,7 +936,6 @@ avatar-img{
     padding-left: 0; 
 }
 
-/* ====== Transição suave nas abas ====== */
 .resume-tab-content {
   display: none;
   opacity: 0;
@@ -954,7 +949,6 @@ avatar-img{
   transform: translateY(0);
 }
 
-/* estilos para tabs (caso ainda não tenha) */
 .tab-btn{
   display: inline-flex;
   gap: 8px;
@@ -979,7 +973,7 @@ avatar-img{
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* controlar visibilidade dos conteúdos */
+
 .resume-tab-content{
   display: none;
   opacity: 0;
@@ -1055,7 +1049,6 @@ avatar-img{
   }
 }
 
-/* ===== Modal / Service widget ===== */
 .service-modal {
   position: fixed;
   inset: 0;
@@ -1112,7 +1105,6 @@ avatar-img{
   color: #dbe2ff;
 }
 
-/* ===== Serviço / skill buttons ===== */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
@@ -1173,7 +1165,7 @@ box-shadow: 0 10px 26px rgba(93,139,255,0.22);
 outline: none;
 }
 
-/* ===== Services section ===== */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1222,7 +1214,7 @@ outline: none;
   opacity: .95;
 }
 
-/* ===== Modal / Service widget ===== */
+
 .service-modal {
   position: fixed;
   inset: 0;
@@ -1257,7 +1249,7 @@ outline: none;
 .service-modal h3 { margin: 0 0 10px 0; font-size:1.25rem; color:#fff; }
 .service-modal-content { color:#dbe2ff; line-height:1.5; font-size:0.98rem; white-space: pre-wrap; }
 
-/* Modal actions / CTA */
+
 .service-modal-actions { margin-top:16px; display:flex; justify-content:flex-end; gap:10px; }
 .service-modal-cta {
   background: linear-gradient(90deg,#5d8bff,#7fb5ff);
@@ -1272,9 +1264,9 @@ outline: none;
 }
 .service-modal-cta:hover, .service-modal-cta:focus { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(93,139,255,0.22); outline:none; }
 
-/* ================= Services & Modal (adicionar no final do arquivo) ================= */
 
-/* Services */
+
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1323,7 +1315,7 @@ outline: none;
   opacity: .95;
 }
 
-/* Skills small buttons (kept from earlier) */
+
 .skills-list {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1350,7 +1342,7 @@ outline: none;
 .skill-item i { font-size: 1.6rem; color: #78a6ff; min-width:36px; text-align:center; }
 .skill-item p { margin: 0; font-weight:600; color:#f5f7ff; }
 
-/* Modal */
+
 .service-modal {
   position: fixed;
   inset: 0;
@@ -1385,7 +1377,6 @@ outline: none;
 .service-modal h3 { margin: 0 0 10px 0; font-size:1.25rem; color:#fff; }
 .service-modal-content { color:#dbe2ff; line-height:1.5; font-size:0.98rem; white-space: pre-wrap; }
 
-/* Modal actions / CTA */
 .service-modal-actions { margin-top:16px; display:flex; justify-content:flex-end; gap:10px; }
 .service-modal-cta {
   background: linear-gradient(90deg,#5d8bff,#7fb5ff);
@@ -1400,16 +1391,12 @@ outline: none;
 }
 .service-modal-cta:hover, .service-modal-cta:focus { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(93,139,255,0.22); outline:none; }
 
-/* ================= Responsividade e 'escala' para móveis ================= */
-/* Estratégia: ajustar font-size base e dimensões em breakpoints para "escalar" o layout */
 
-/* Desktop default: root font size normal */
 :root {
   --base-font-size: 16px;
 }
 html { font-size: var(--base-font-size); }
 
-/* Tablet — reduzir levemente a escala (ex: 14px) */
 @media (max-width: 1024px) {
   :root { --base-font-size: 15px; }
   .service-icon { width:42px; height:42px; }
@@ -1417,7 +1404,7 @@ html { font-size: var(--base-font-size); }
   .service-modal-panel { max-width: 640px; padding: 18px; }
 }
 
-/* Mobile — compactar e reorganizar (ex: 14px a 13px) */
+
 @media (max-width: 768px) {
   :root { --base-font-size: 14.5px; }
   .services-grid { gap: 12px; }
@@ -1427,7 +1414,7 @@ html { font-size: var(--base-font-size); }
   .service-modal-panel { width: 94%; max-width: 520px; padding: 16px; }
 }
 
-/* Small phones — ajustar ainda mais (ex: 13px) */
+
 @media (max-width: 420px) {
   :root { --base-font-size: 13px; }
   .services-grid { grid-template-columns: 1fr; gap: 10px; }
@@ -1437,13 +1424,12 @@ html { font-size: var(--base-font-size); }
   .service-modal-content { font-size: 0.92rem; }
 }
 
-/* opcional: reduzir o zoom em telas muito altas vs largura estreita */
-/* evita que elementos fiquem muito grandes em dispositivos estranhos */
+
 @media (max-width: 360px) {
   :root { --base-font-size: 12.75px; }
 }
 
-/* ========== Portfolio grid (estilo Behance) ========== */
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1451,7 +1437,7 @@ html { font-size: var(--base-font-size); }
   align-items: stretch;
 }
 
-/* cada card */
+
 .portfolio-item {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius: 12px;
@@ -1470,7 +1456,7 @@ html { font-size: var(--base-font-size); }
   outline: none;
 }
 
-/* Thumb */
+
 .portfolio-thumb {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -1486,7 +1472,6 @@ html { font-size: var(--base-font-size); }
 }
 .portfolio-item:hover .portfolio-thumb img { transform: scale(1.06); }
 
-/* Meta */
 .portfolio-meta {
   padding: 12px 14px;
 }
@@ -1501,7 +1486,7 @@ html { font-size: var(--base-font-size); }
   color: var(--color-04);
 }
 
-/* ========== Modal / Carousel styles ========== */
+
 .portfolio-modal {
   position: fixed;
   inset: 0;
@@ -1539,7 +1524,7 @@ html { font-size: var(--base-font-size); }
   cursor: pointer;
 }
 
-/* inner layout: carousel left, info right (responsive) */
+
 .portfolio-modal-inner {
   display: grid;
   grid-template-columns: 1fr 360px;
@@ -1547,7 +1532,7 @@ html { font-size: var(--base-font-size); }
   align-items: start;
 }
 
-/* carousel area */
+
 .portfolio-carousel {
   position: relative;
   width: 100%;
@@ -1579,7 +1564,7 @@ html { font-size: var(--base-font-size); }
   border-radius: 6px;
 }
 
-/* prev/next */
+
 .carousel-prev,
 .carousel-next {
   position: absolute;
@@ -1600,7 +1585,7 @@ html { font-size: var(--base-font-size); }
 .carousel-prev { left: 12px; }
 .carousel-next { right: 12px; }
 
-/* info side */
+
 .portfolio-info {
   padding: 6px 4px;
 }
@@ -1611,14 +1596,14 @@ html { font-size: var(--base-font-size); }
   white-space: pre-wrap;
 }
 
-/* dots */
+
 .carousel-dots { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
 .carousel-dots button {
   width:10px; height:10px; border-radius:50%; border:0; background: rgba(255,255,255,0.14); cursor:pointer;
 }
 .carousel-dots button.active { background: var(--primary-color); }
 
-/* responsive */
+
 @media (max-width: 920px) {
   .portfolio-modal-inner { grid-template-columns: 1fr; }
   .portfolio-info { order: 2; }
@@ -1630,28 +1615,28 @@ html { font-size: var(--base-font-size); }
   .portfolio-modal-inner { gap:10px; }
 }
 
-/* ===== Ajustes: imagem do carrossel e icons de programa ===== */
+
 .carousel-track .slide {
   position: absolute;
   inset: 0;
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 20px;                /* espaço interno para "mockup" */
+  padding: 20px;                
   box-sizing: border-box;
   background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
   border-radius: 8px;
 }
 
-/* slide ativo */
+
 .carousel-track .slide.active {
   display: flex;
 }
 
-/* imagem: contida e centralizada, com altura máxima relativa à viewport */
+
 .carousel-track .slide img {
   max-width: 100%;
-  max-height: calc(70vh - 140px); /* adapta ao tamanho do modal */
+  max-height: calc(70vh - 140px); 
   width: auto;
   height: auto;
   object-fit: contain;
@@ -1662,12 +1647,12 @@ html { font-size: var(--base-font-size); }
   transition: transform .25s ease;
 }
 
-/* se quiser um efeito "mockup" mais suave ao trocar */
+
 .carousel-track .slide img:hover {
   transform: scale(1.02);
 }
 
-/* tools (icons dos programas usados) - aparecem na lateral/informação */
+
 .portfolio-tools {
   display: flex;
   gap: 10px;
@@ -1676,7 +1661,7 @@ html { font-size: var(--base-font-size); }
   flex-wrap: wrap;
 }
 
-/* tamanho grande do icon-full */
+
 .portfolio-tools .tool-icon {
   width: 44px;
   height: 44px;
@@ -1696,7 +1681,7 @@ html { font-size: var(--base-font-size); }
   display:block;
 }
 
-/* estilo responsivo: garantir que a imagem não ultrapasse o modal em phones */
+
 @media (max-width: 520px) {
   .carousel-track .slide img {
     max-height: calc(60vh - 120px);
@@ -1704,7 +1689,6 @@ html { font-size: var(--base-font-size); }
   .portfolio-modal-inner { gap: 12px; }
 }
 
-/* ===== Contact section styles ===== */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1720,7 +1704,6 @@ html { font-size: var(--base-font-size); }
 
 .or { margin-top:18px; color:var(--color-04); font-size:0.95rem; }
 
-/* form */
 .contact-form { display:flex; flex-direction:column; gap:12px; }
 .field label { display:block; font-size:0.95rem; color:var(--color-04); margin-bottom:6px; }
 .field input, .field textarea { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background: rgba(0,0,0,0.25); color:var(--color-02); }
@@ -1731,7 +1714,7 @@ html { font-size: var(--base-font-size); }
 .btn.primary { background: linear-gradient(90deg,#5d8bff,#7fb5ff); color:#071028; }
 .btn.outline { background:transparent; color:var(--color-02); border:1px solid rgba(255,255,255,0.04); }
 
-/* feedback note */
+
 .form-note { margin-top: 1rem; font-size: 0.9rem; transition: all 0.3s ease; }
 
 button[type="submit"]:disabled {
@@ -1739,7 +1722,7 @@ button[type="submit"]:disabled {
     cursor: not-allowed;
 }
 
-/* --- Contact chips acima do formulário --- */
+
 .contact-chips {
   display: flex;
   gap: 12px;
@@ -1768,26 +1751,26 @@ button[type="submit"]:disabled {
   text-align: center;
 }
 
-/* Versão topo (quando estiver acima do formulário) */
+
 .contact-chips-top {
   justify-content: flex-start;
   margin-bottom: 20px;
 }
 
-/* Em telas pequenas, centraliza os chips */
+
 @media (max-width: 720px) {
   .contact-chips-top {
     justify-content: center;
   }
 }
 
-/* --- Espaçamento para não ficar embaixo do bottom-nav flutuante --- */
+
 body {
-  /* ajuste esse valor se o bottom-nav for maior/menor */
+ 
   padding-bottom: 120px;
 }
 
-/* --- Rodapé simples e elegante --- */
+
 .site-footer {
   border-top: 1px solid rgba(255,255,255,0.04);
   background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.05));
@@ -1830,7 +1813,7 @@ body {
   font-size: 13px;
 }
 
-/* responsividade */
+
 @media (max-width: 720px) {
   .site-footer .footer-inner {
     flex-direction: column;
@@ -1842,7 +1825,7 @@ body {
   }
 }
 
-/* Centralizar seção de contato */
+
 .contact-grid {
   display: flex;
   justify-content: center;
@@ -1870,7 +1853,7 @@ body {
   border: 1px solid rgba(255,255,255,0.04);
 }
 
-/* Ajuste responsivo */
+
 @media (max-width: 520px) {
   .contact-grid {
     padding: 0 12px;
